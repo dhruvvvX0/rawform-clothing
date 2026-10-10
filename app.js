@@ -5,47 +5,48 @@
   // RAWFORM® PRODUCT CATALOGUE
   // Prices are sample prices in Indian rupees.
 
-  const products = [
-    // TEES
-    { id: 1, name: "SIGNAL OVERSIZED TEE", price: 1299, category: "tees", color: "Off-white", image: "photo-1521572163474-6864f9cf17ab" },
-    { id: 2, name: "RAW GRAPHIC TEE", price: 1499, category: "tees", color: "Black", image: "photo-1503341504253-dff4815485f1" },
-    { id: 3, name: "CORE HEAVYWEIGHT TEE", price: 1199, category: "tees", color: "White", image: "photo-1521572163474-6864f9cf17ab" },
+ 
+const products = [
+  // TEES
+  { id: 1, name: "SIGNAL OVERSIZED TEE", price: 1299, category: "tees", color: "Off-white", image: "photo-1521572163474-6864f9cf17ab" },
+  { id: 2, name: "RAW GRAPHIC TEE", price: 1499, category: "tees", color: "Black", image: "photo-1503341504253-dff4815485f1" },
+  { id: 3, name: "CORE HEAVYWEIGHT TEE", price: 1199, category: "tees", color: "White", image: "photo-1576566588028-4147f3842f27" },
 
-    // TROUSERS
-    { id: 4, name: "UTILITY CARGO TROUSER", price: 2499, category: "trousers", color: "Olive", image: "photo-1473966968600-fa801b869a1a" },
-    { id: 5, name: "RELAXED FIT TROUSER", price: 2199, category: "trousers", color: "Stone", image: "photo-1515886657613-9f3515b0c78f" },
-    { id: 6, name: "WIDE LEG TROUSER", price: 2699, category: "trousers", color: "Black", image: "photo-1473966968600-fa801b869a1a" },
+  // TROUSERS
+  { id: 4, name: "UTILITY CARGO TROUSER", price: 2499, category: "trousers", color: "Olive", image: "photo-1515886657613-9f3515b0c78f" },
+  { id: 5, name: "RELAXED FIT TROUSER", price: 2199, category: "trousers", color: "Stone", image: "photo-1473966968600-fa801b869a1a" },
+  { id: 6, name: "WIDE LEG TROUSER", price: 2699, category: "trousers", color: "Black", image: "photo-1506629905607-d9a5a4b2b8b3" },
 
-    // PANTS & JEANS
-    { id: 7, name: "DISTRESSED DENIM JEANS", price: 2799, category: "pants", color: "Blue denim", image: "photo-1542272604-787c3835535d" },
-    { id: 8, name: "FORM TRACK PANTS", price: 1899, category: "pants", color: "Black", image: "photo-1473966968600-fa801b869a1a" },
-    { id: 9, name: "BAGGY DENIM PANTS", price: 2899, category: "pants", color: "Washed blue", image: "photo-1542272604-787c3835535d" },
+  // PANTS & JEANS
+  { id: 7, name: "DISTRESSED DENIM JEANS", price: 2799, category: "pants", color: "Blue denim", image: "photo-1542272604-787c3835535d" },
+  { id: 8, name: "FORM TRACK PANTS", price: 1899, category: "pants", color: "Black", image: "photo-1552902865-b72c031ac5ea" },
+  { id: 9, name: "BAGGY DENIM PANTS", price: 2899, category: "pants", color: "Washed blue", image: "photo-1512436991641-6745cdb1723f" },
 
-    // JACKETS
-    { id: 10, name: "UTILITY SHELL JACKET", price: 4299, category: "jackets", color: "Black", image: "photo-1551028719-00167b16eac5" },
-    { id: 11, name: "STREET BOMBER", price: 3999, category: "jackets", color: "Charcoal", image: "photo-1591047139829-d91aecb6caea" },
-    { id: 12, name: "DENIM WORK JACKET", price: 3699, category: "jackets", color: "Blue denim", image: "photo-1551028719-00167b16eac5" },
+  // JACKETS
+  { id: 10, name: "UTILITY SHELL JACKET", price: 4299, category: "jackets", color: "Black", image: "photo-1551028719-00167b16eac5" },
+  { id: 11, name: "STREET BOMBER", price: 3999, category: "jackets", color: "Charcoal", image: "photo-1591047139829-d91aecb6caea" },
+  { id: 12, name: "DENIM WORK JACKET", price: 3699, category: "jackets", color: "Blue denim", image: "photo-1544923246-77307dd654cb" },
 
-    // BAGS
-    { id: 13, name: "UTILITY SLING BAG", price: 1499, category: "bags", color: "Black", image: "photo-1553062407-98eeb64c6a62" },
-    { id: 14, name: "EVERYDAY BACKPACK", price: 2299, category: "bags", color: "Black", image: "photo-1553062407-98eeb64c6a62" },
-    { id: 15, name: "CROSSBODY BAG", price: 1299, category: "bags", color: "Grey", image: "photo-1548036328-c9fa89d128fa" },
+  // BAGS
+  { id: 13, name: "UTILITY SLING BAG", price: 1499, category: "bags", color: "Black", image: "photo-1553062407-98eeb64c6a62" },
+  { id: 14, name: "EVERYDAY BACKPACK", price: 2299, category: "bags", color: "Black", image: "photo-1622560480654-d96214fdc887" },
+  { id: 15, name: "CROSSBODY BAG", price: 1299, category: "bags", color: "Grey", image: "photo-1548036328-c9fa89d128fa" },
 
-    // CAPS
-    { id: 16, name: "RAWFORM BASEBALL CAP", price: 799, category: "caps", color: "Black", image: "photo-1588850561407-ed78c282e89b" },
-    { id: 17, name: "EVERYDAY SNAPBACK", price: 899, category: "caps", color: "Stone", image: "photo-1588850561407-ed78c282e89b" },
-    { id: 18, name: "MINIMAL DAD CAP", price: 699, category: "caps", color: "Olive", image: "photo-1588850561407-ed78c282e89b" },
+  // CAPS
+  { id: 16, name: "RAWFORM BASEBALL CAP", price: 799, category: "caps", color: "Black", image: "photo-1588850561407-ed78c282e89b" },
+  { id: 17, name: "EVERYDAY SNAPBACK", price: 899, category: "caps", color: "Stone", image: "photo-1521369909029-2afed882baee" },
+  { id: 18, name: "MINIMAL DAD CAP", price: 699, category: "caps", color: "Olive", image: "photo-1588850561407-ed78c282e89b&sat=-60" },
 
-    // HOODIES & SWEATSHIRTS
-    { id: 19, name: "FORM OVERSIZED HOODIE", price: 2499, category: "hoodies", color: "Grey", image: "photo-1556821840-3a63f95609a7" },
-    { id: 20, name: "CORE PULLOVER", price: 2299, category: "hoodies", color: "Black", image: "photo-1556821840-3a63f95609a7" },
-    { id: 21, name: "RAW CREWNECK", price: 1999, category: "hoodies", color: "Bone", image: "photo-1578768079052-aa76e52ff62e" },
+  // HOODIES & SWEATSHIRTS
+  { id: 19, name: "FORM OVERSIZED HOODIE", price: 2499, category: "hoodies", color: "Grey", image: "photo-1556821840-3a63f95609a7" },
+  { id: 20, name: "CORE PULLOVER", price: 2299, category: "hoodies", color: "Black", image: "photo-1578681994506-b8f463449011" },
+  { id: 21, name: "RAW CREWNECK", price: 1999, category: "hoodies", color: "Bone", image: "photo-1578768079052-aa76e52ff62e" },
 
-    // ACCESSORIES
-    { id: 22, name: "STREET SOCKS SET", price: 499, category: "accessories", color: "White", image: "photo-1586350977771-b3b0abba4e95" },
-    { id: 23, name: "UTILITY BELT", price: 699, category: "accessories", color: "Black", image: "photo-1624222247344-550fb8a4c7f9" },
-    { id: 24, name: "EVERYDAY WALLET", price: 999, category: "accessories", color: "Black", image: "photo-1627123424574-724758594e93" }
-  ];
+  // ACCESSORIES
+  { id: 22, name: "STREET SOCKS SET", price: 499, category: "accessories", color: "White", image: "photo-1586350977771-b3b0abba4e95" },
+  { id: 23, name: "UTILITY BELT", price: 699, category: "accessories", color: "Black", image: "photo-1624222247344-550fb8a4c7f9" },
+  { id: 24, name: "EVERYDAY WALLET", price: 999, category: "accessories", color: "Black", image: "photo-1627123424574-724758594e93" }
+];
 
   const categoryNames = {
     tees: "TEES",
