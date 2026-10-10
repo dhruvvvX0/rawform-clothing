@@ -3,52 +3,49 @@
   "use strict";
 
   // RAWFORM® PRODUCT CATALOGUE
-  // Prices are sample prices in Indian rupees.
+  // Sample prices in INR.
 
- 
+  const products = [
+    // TEES
+    { id: 1, name: "SIGNAL OVERSIZED TEE", price: 1299, category: "tees", color: "Off-white", image: "photo-1521572163474-6864f9cf17ab" },
+    { id: 2, name: "RAW GRAPHIC TEE", price: 1499, category: "tees", color: "Black", image: "photo-1503341504253-dff4815485f1" },
+    { id: 3, name: "CORE HEAVYWEIGHT TEE", price: 1199, category: "tees", color: "White", image: "photo-1576566588028-4147f3842f27" },
 
-const products = [
-  // TEES
-  { id: 1, name: "SIGNAL OVERSIZED TEE", price: 1299, category: "tees", color: "Off-white", image: "photo-1521572163474-6864f9cf17ab" },
-  { id: 2, name: "RAW GRAPHIC TEE", price: 1499, category: "tees", color: "Black", image: "photo-1503341504253-dff4815485f1" },
-  { id: 3, name: "CORE HEAVYWEIGHT TEE", price: 1199, category: "tees", color: "White", image: "photo-1576566588028-4147f3842f27" },
+    // TROUSERS
+    { id: 4, name: "UTILITY CARGO TROUSER", price: 2499, category: "trousers", color: "Olive", image: "photo-1515886657613-9f3515b0c78f" },
+    { id: 5, name: "RELAXED FIT TROUSER", price: 2199, category: "trousers", color: "Stone", image: "photo-1473966968600-fa801b869a1a" },
+    { id: 6, name: "WIDE LEG TROUSER", price: 2699, category: "trousers", color: "Black", image: "photo-1517438476312-10d79c077509" },
 
-  // TROUSERS
-  { id: 4, name: "UTILITY CARGO TROUSER", price: 2499, category: "trousers", color: "Olive", image: "photo-1515886657613-9f3515b0c78f" },
-  { id: 5, name: "RELAXED FIT TROUSER", price: 2199, category: "trousers", color: "Stone", image: "photo-1473966968600-fa801b869a1a" },
-  { id: 6, name: "WIDE LEG TROUSER", price: 2699, category: "trousers", color: "Black", image: "photo-1517438476312-10d79c077509" },
+    // PANTS & JEANS
+    { id: 7, name: "DISTRESSED DENIM JEANS", price: 2799, category: "pants", color: "Blue denim", image: "photo-1542272604-787c3835535d" },
+    { id: 8, name: "FORM TRACK PANTS", price: 1899, category: "pants", color: "Black", image: "photo-1552902865-b72c031ac5ea" },
+    { id: 9, name: "BAGGY DENIM PANTS", price: 2899, category: "pants", color: "Washed blue", image: "photo-1512436991641-6745cdb1723f" },
 
-  // PANTS & JEANS
-  { id: 7, name: "DISTRESSED DENIM JEANS", price: 2799, category: "pants", color: "Blue denim", image: "photo-1542272604-787c3835535d" },
-  { id: 8, name: "FORM TRACK PANTS", price: 1899, category: "pants", color: "Black", image: "photo-1552902865-b72c031ac5ea" },
-  { id: 9, name: "BAGGY DENIM PANTS", price: 2899, category: "pants", color: "Washed blue", image: "photo-1512436991641-6745cdb1723f" },
+    // JACKETS
+    { id: 10, name: "UTILITY SHELL JACKET", price: 4299, category: "jackets", color: "Black", image: "photo-1551028719-00167b16eac5" },
+    { id: 11, name: "STREET BOMBER", price: 3999, category: "jackets", color: "Charcoal", image: "photo-1591047139829-d91aecb6caea" },
+    { id: 12, name: "DENIM WORK JACKET", price: 3699, category: "jackets", color: "Blue denim", image: "photo-1544923246-77307dd654cb" },
 
-  // JACKETS
-  { id: 10, name: "UTILITY SHELL JACKET", price: 4299, category: "jackets", color: "Black", image: "photo-1551028719-00167b16eac5" },
-  { id: 11, name: "STREET BOMBER", price: 3999, category: "jackets", color: "Charcoal", image: "photo-1591047139829-d91aecb6caea" },
-  { id: 12, name: "DENIM WORK JACKET", price: 3699, category: "jackets", color: "Blue denim", image: "photo-1544923246-77307dd654cb" },
+    // BAGS
+    { id: 13, name: "UTILITY SLING BAG", price: 1499, category: "bags", color: "Black", image: "photo-1553062407-98eeb64c6a62" },
+    { id: 14, name: "EVERYDAY BACKPACK", price: 2299, category: "bags", color: "Black", image: "photo-1622560480654-d96214fdc887" },
+    { id: 15, name: "CROSSBODY BAG", price: 1299, category: "bags", color: "Grey", image: "photo-1548036328-c9fa89d128fa" },
 
-  // BAGS
-  { id: 13, name: "UTILITY SLING BAG", price: 1499, category: "bags", color: "Black", image: "photo-1553062407-98eeb64c6a62" },
-  { id: 14, name: "EVERYDAY BACKPACK", price: 2299, category: "bags", color: "Black", image: "photo-1622560480654-d96214fdc887" },
-  { id: 15, name: "CROSSBODY BAG", price: 1299, category: "bags", color: "Grey", image: "photo-1548036328-c9fa89d128fa" },
+    // CAPS
+    { id: 16, name: "RAWFORM BASEBALL CAP", price: 799, category: "caps", color: "Black", image: "photo-1588850561407-ed78c282e89b" },
+    { id: 17, name: "EVERYDAY SNAPBACK", price: 899, category: "caps", color: "Stone", image: "photo-1521369909029-2afed882baee" },
+    { id: 18, name: "MINIMAL DAD CAP", price: 699, category: "caps", color: "Olive", image: "photo-1534215754734-18e55d13e346" },
 
-  // CAPS
-  { id: 16, name: "RAWFORM BASEBALL CAP", price: 799, category: "caps", color: "Black", image: "photo-1588850561407-ed78c282e89b" },
-  { id: 17, name: "EVERYDAY SNAPBACK", price: 899, category: "caps", color: "Stone", image: "photo-1521369909029-2afed882baee" },
-  { id: 18, name: "MINIMAL DAD CAP", price: 699, category: "caps", color: "Olive", image: "photo-1534215754734-18e55d13e346" },
+    // HOODIES
+    { id: 19, name: "FORM OVERSIZED HOODIE", price: 2499, category: "hoodies", color: "Grey", image: "photo-1556821840-3a63f95609a7" },
+    { id: 20, name: "CORE PULLOVER", price: 2299, category: "hoodies", color: "Black", image: "photo-1578681994506-b8f463449011" },
+    { id: 21, name: "RAW CREWNECK", price: 1999, category: "hoodies", color: "Bone", image: "photo-1578768079052-aa76e52ff62e" },
 
-  // HOODIES & SWEATSHIRTS
-  { id: 19, name: "FORM OVERSIZED HOODIE", price: 2499, category: "hoodies", color: "Grey", image: "photo-1556821840-3a63f95609a7" },
-  { id: 20, name: "CORE PULLOVER", price: 2299, category: "hoodies", color: "Black", image: "photo-1578681994506-b8f463449011" },
-  { id: 21, name: "RAW CREWNECK", price: 1999, category: "hoodies", color: "Bone", image: "photo-1578768079052-aa76e52ff62e" },
-
-  // ACCESSORIES
-  { id: 22, name: "STREET SOCKS SET", price: 499, category: "accessories", color: "White", image: "photo-1586350977771-b3b0dc5e1a10" },
-  { id: 23, name: "UTILITY BELT", price: 699, category: "accessories", color: "Black", image: "photo-1624222247344-550fb8a4c7f9" },
-  { id: 24, name: "EVERYDAY WALLET", price: 999, category: "accessories", color: "Black", image: "photo-1627123424574-724758594e93" }
-];
-
+    // ACCESSORIES
+    { id: 22, name: "STREET SOCKS SET", price: 499, category: "accessories", color: "White", image: "photo-1586350977771-b3b0abba4e95" },
+    { id: 23, name: "UTILITY BELT", price: 699, category: "accessories", color: "Black", image: "photo-1553062407-98eeb64c6a62" },
+    { id: 24, name: "EVERYDAY WALLET", price: 999, category: "accessories", color: "Black", image: "photo-1627123424574-724758594e93" }
+  ];
 
   const categoryNames = {
     tees: "TEES",
@@ -79,8 +76,16 @@ const products = [
       maximumFractionDigits: 0
     }).format(amount);
 
-  const imageURL = id =>
-    `https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=85`;
+  // Supports full URLs and Unsplash photo IDs.
+  function imageURL(image) {
+    if (!image) return fallbackImage();
+
+    if (/^https?:\/\//i.test(image)) {
+      return image;
+    }
+
+    return `https://images.unsplash.com/${image}?auto=format&fit=crop&w=800&q=85`;
+  }
 
   const bag = new Map();
 
@@ -94,7 +99,7 @@ const products = [
   const dialog = $("#product-dialog");
   const toast = $("#toast");
 
-  // Fallback artwork if a product photo cannot load.
+  // RAWFORM fallback image.
   function fallbackImage() {
     const svg = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
@@ -115,6 +120,8 @@ const products = [
   }
 
   function showToast(message) {
+    if (!toast) return;
+
     toast.textContent = message;
     toast.classList.add("show");
 
@@ -125,9 +132,12 @@ const products = [
     }, 2500);
   }
 
-  // BUILD PRODUCT CARDS
+  // PRODUCT CARDS
   function renderProducts() {
-    if (!grid) return;
+    if (!grid) {
+      console.error('Missing element: #products-grid');
+      return;
+    }
 
     const visibleProducts = products.filter(product =>
       activeFilter === "all" ||
@@ -136,8 +146,12 @@ const products = [
 
     grid.replaceChildren();
 
-    $("#product-count").textContent =
-      `${visibleProducts.length} ${visibleProducts.length === 1 ? "PIECE" : "PIECES"}`;
+    const countElement = $("#product-count");
+
+    if (countElement) {
+      countElement.textContent =
+        `${visibleProducts.length} ${visibleProducts.length === 1 ? "PIECE" : "PIECES"}`;
+    }
 
     visibleProducts.forEach(product => {
       const card = document.createElement("article");
@@ -146,10 +160,7 @@ const products = [
       const imageButton = document.createElement("button");
       imageButton.type = "button";
       imageButton.className = "product-image";
-      imageButton.setAttribute(
-        "aria-label",
-        `View ${product.name}`
-      );
+      imageButton.setAttribute("aria-label", `View ${product.name}`);
 
       const img = document.createElement("img");
       img.src = imageURL(product.image);
@@ -168,6 +179,7 @@ const products = [
       quickAdd.textContent = "VIEW PRODUCT ↗";
 
       imageButton.append(img, tag, quickAdd);
+
       imageButton.addEventListener("click", () => {
         openProduct(product);
       });
@@ -199,47 +211,41 @@ const products = [
     }
   }
 
-  // CATEGORY FILTER BUTTONS
+  // CATEGORY FILTERS
   $$(".filter").forEach(button => {
     button.addEventListener("click", () => {
       activeFilter = button.dataset.filter || "all";
-
-      $$(".filter").forEach(filterButton => {
-        const isActive = filterButton === button;
-
-        filterButton.classList.toggle("active", isActive);
-        filterButton.setAttribute(
-          "aria-pressed",
-          String(isActive)
-        );
-      });
-
+      updateActiveFilterButtons();
       renderProducts();
     });
   });
 
+  function updateActiveFilterButtons() {
+    $$(".filter").forEach(button => {
+      const isActive =
+        (button.dataset.filter || "all") === activeFilter;
+
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  }
+
   // HEADER CATEGORY SHORTCUTS
   $$("[data-nav-category]").forEach(link => {
     link.addEventListener("click", () => {
-      activeFilter = link.dataset.navCategory;
-
-      $$(".filter").forEach(button => {
-        const isActive =
-          button.dataset.filter === activeFilter;
-
-        button.classList.toggle("active", isActive);
-        button.setAttribute(
-          "aria-pressed",
-          String(isActive)
-        );
-      });
-
+      activeFilter = link.dataset.navCategory || "all";
+      updateActiveFilterButtons();
       renderProducts();
     });
   });
 
   // OPEN PRODUCT DETAILS
   function openProduct(product) {
+    if (!dialog) {
+      showToast("Product details are unavailable.");
+      return;
+    }
+
     selectedProduct = product;
     selectedSize = "M";
     selectedColor = product.color;
@@ -256,7 +262,6 @@ const products = [
 
     const colorSelect = $("#product-color");
 
-    // Make the product's default color available.
     colorSelect.replaceChildren();
 
     const availableColors = [
@@ -280,10 +285,7 @@ const products = [
       const isSelected = button.dataset.size === selectedSize;
 
       button.classList.toggle("selected", isSelected);
-      button.setAttribute(
-        "aria-pressed",
-        String(isSelected)
-      );
+      button.setAttribute("aria-pressed", String(isSelected));
     });
 
     $("#add-to-bag").disabled = false;
@@ -302,10 +304,7 @@ const products = [
         const isSelected = sizeButton === button;
 
         sizeButton.classList.toggle("selected", isSelected);
-        sizeButton.setAttribute(
-          "aria-pressed",
-          String(isSelected)
-        );
+        sizeButton.setAttribute("aria-pressed", String(isSelected));
       });
     });
   });
@@ -313,7 +312,6 @@ const products = [
   // COLOR SELECTION
   $("#product-color").addEventListener("change", event => {
     selectedColor = event.target.value;
-
     $("#selected-color-label").textContent =
       selectedColor.toUpperCase();
   });
@@ -328,7 +326,7 @@ const products = [
     }
   });
 
-  // ADD PRODUCT TO BAG
+  // ADD TO BAG
   $("#add-to-bag").addEventListener("click", () => {
     if (!selectedProduct) return;
 
@@ -353,34 +351,26 @@ const products = [
 
     renderBag();
     dialog.close();
-
     showToast(`${selectedProduct.name} ADDED TO BAG`);
   });
 
-  // UPDATE BAG DISPLAY
+  // RENDER BAG
   function renderBag() {
     const entries = [...bag.entries()];
 
     const count = entries.reduce(
-      (total, [, item]) => total + item.quantity,
-      0
+      (total, [, item]) => total + item.quantity, 0
     );
 
     const subtotal = entries.reduce(
-      (total, [, item]) =>
-        total + item.price * item.quantity,
-      0
+      (total, [, item]) => total + item.price * item.quantity, 0
     );
 
     $("#bag-count").textContent = count;
     $("#drawer-count").textContent = `(${count})`;
     $("#bag-subtotal").textContent = money(subtotal);
 
-    $("#bag-empty").classList.toggle(
-      "visible",
-      count === 0
-    );
-
+    $("#bag-empty").classList.toggle("visible", count === 0);
     $("#bag-items").hidden = count === 0;
     $("#checkout-button").disabled = count === 0;
 
@@ -462,7 +452,6 @@ const products = [
   // SHOPPING BAG DRAWER
   function openBag() {
     $("#bag-overlay").hidden = false;
-
     $("#bag-drawer").classList.add("open");
     $("#bag-drawer").setAttribute("aria-hidden", "false");
 
@@ -501,7 +490,7 @@ const products = [
     }
   });
 
-  // CHECKOUT PLACEHOLDER
+  // CHECKOUT DEMO
   $("#checkout-button").addEventListener("click", () => {
     if (bag.size === 0) return;
 
@@ -517,11 +506,7 @@ const products = [
   menuToggle.addEventListener("click", () => {
     const isOpen = navigation.classList.toggle("open");
 
-    menuToggle.setAttribute(
-      "aria-expanded",
-      String(isOpen)
-    );
-
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
     menuToggle.textContent = isOpen ? "✕" : "☰";
   });
 
@@ -550,7 +535,7 @@ const products = [
     email.value = "";
   });
 
-  // INITIALIZE STORE
+  // INITIALIZE
   renderProducts();
   renderBag();
 })();
