@@ -6,6 +6,7 @@
   // Prices are sample prices in Indian rupees.
 
  
+
 const products = [
   // TEES
   { id: 1, name: "SIGNAL OVERSIZED TEE", price: 1299, category: "tees", color: "Off-white", image: "photo-1521572163474-6864f9cf17ab" },
@@ -15,7 +16,7 @@ const products = [
   // TROUSERS
   { id: 4, name: "UTILITY CARGO TROUSER", price: 2499, category: "trousers", color: "Olive", image: "photo-1515886657613-9f3515b0c78f" },
   { id: 5, name: "RELAXED FIT TROUSER", price: 2199, category: "trousers", color: "Stone", image: "photo-1473966968600-fa801b869a1a" },
-  { id: 6, name: "WIDE LEG TROUSER", price: 2699, category: "trousers", color: "Black", image: "photo-1506629905607-d9a5a4b2b8b3" },
+  { id: 6, name: "WIDE LEG TROUSER", price: 2699, category: "trousers", color: "Black", image: "photo-1517438476312-10d79c077509" },
 
   // PANTS & JEANS
   { id: 7, name: "DISTRESSED DENIM JEANS", price: 2799, category: "pants", color: "Blue denim", image: "photo-1542272604-787c3835535d" },
@@ -35,7 +36,7 @@ const products = [
   // CAPS
   { id: 16, name: "RAWFORM BASEBALL CAP", price: 799, category: "caps", color: "Black", image: "photo-1588850561407-ed78c282e89b" },
   { id: 17, name: "EVERYDAY SNAPBACK", price: 899, category: "caps", color: "Stone", image: "photo-1521369909029-2afed882baee" },
-  { id: 18, name: "MINIMAL DAD CAP", price: 699, category: "caps", color: "Olive", image: "photo-1588850561407-ed78c282e89b&sat=-60" },
+  { id: 18, name: "MINIMAL DAD CAP", price: 699, category: "caps", color: "Olive", image: "photo-1534215754734-18e55d13e346" },
 
   // HOODIES & SWEATSHIRTS
   { id: 19, name: "FORM OVERSIZED HOODIE", price: 2499, category: "hoodies", color: "Grey", image: "photo-1556821840-3a63f95609a7" },
@@ -43,10 +44,11 @@ const products = [
   { id: 21, name: "RAW CREWNECK", price: 1999, category: "hoodies", color: "Bone", image: "photo-1578768079052-aa76e52ff62e" },
 
   // ACCESSORIES
-  { id: 22, name: "STREET SOCKS SET", price: 499, category: "accessories", color: "White", image: "photo-1586350977771-b3b0abba4e95" },
+  { id: 22, name: "STREET SOCKS SET", price: 499, category: "accessories", color: "White", image: "photo-1586350977771-b3b0dc5e1a10" },
   { id: 23, name: "UTILITY BELT", price: 699, category: "accessories", color: "Black", image: "photo-1624222247344-550fb8a4c7f9" },
   { id: 24, name: "EVERYDAY WALLET", price: 999, category: "accessories", color: "Black", image: "photo-1627123424574-724758594e93" }
 ];
+
 
   const categoryNames = {
     tees: "TEES",
