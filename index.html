@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f2eb">
+  <meta name="description" content="RAWFORM — Contemporary streetwear, everyday essentials and expressive silhouettes.">
+  <title>RAWFORM® — Wear Your Form</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    FREE SHIPPING ON ORDERS OVER ₹2,999
+    <span> / </span>
+    DESIGNED FOR EVERYDAY REBELLION
+  </div>
+
+  <header class="header">
+    <a class="logo" href="#home">RAWFORM<span>®</span></a>
+
+    <nav class="nav" id="navigation">
+      <a href="#collection">SHOP ALL</a>
+      <a href="#collection" data-nav-category="tees">TEES</a>
+      <a href="#collection" data-nav-category="pants">PANTS</a>
+      <a href="#collection" data-nav-category="jackets">JACKETS</a>
+      <a href="#story">OUR STORY</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="bag-button" id="open-bag" aria-label="Open shopping bag">
+        BAG <span id="bag-count">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation"
+        aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> INDEPENDENT STREETWEAR / INDIA</p>
+        <h1>OWN YOUR<br><span>FORM.</span></h1>
+        <p class="hero-description">
+          Built for the ones who don't follow the shape.
+          Everyday essentials, reimagined.
+        </p>
+        <a href="#collection" class="primary-button">
+          EXPLORE THE COLLECTION <span>↗</span>
+        </a>
+        <div class="hero-bottom">
+          <span>EST. 2026 / INDIA</span>
+          <span>NOT MADE TO BLEND IN.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=85"
+          alt="Contemporary streetwear editorial"
+          fetchpriority="high">
+        <div class="hero-stamp">RF<br>001</div>
+        <div class="image-caption">
+          <span>SEASON 01 — UNDEFINED</span>
+          <span>FIG. 001</span>
+        </div>
+      </div>
+
+      <div class="hero-index">01 / 04</div>
+    </section>
+
+    <div class="ticker" aria-label="RAWFORM clothing collection">
+      <div class="ticker-track">
+        <span>LESS NOISE. MORE FORM.</span><span>✳</span>
+        <span>BUILT DIFFERENT.</span><span>✳</span>
+        <span>WEAR YOUR FORM.</span><span>✳</span>
+        <span>LESS NOISE. MORE FORM.</span><span>✳</span>
+        <span>BUILT DIFFERENT.</span><span>✳</span>
+        <span>WEAR YOUR FORM.</span><span>✳</span>
+      </div>
+    </div>
+
+    <section class="collection section-pad" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 — THE COLLECTION</p>
+          <h2>FIND YOUR <span>FORM.</span></h2>
+        </div>
+        <p class="section-description">
+          Everyday uniforms. Unexpected details.<br>
+          Find the pieces that feel like you.
+        </p>
+      </div>
+
+      <div class="filters" aria-label="Product categories">
+        <button class="filter active" data-filter="all" aria-pressed="true">ALL ITEMS</button>
+        <button class="filter" data-filter="tees" aria-pressed="false">TEES</button>
+        <button class="filter" data-filter="trousers" aria-pressed="false">TROUSERS</button>
+        <button class="filter" data-filter="pants" aria-pressed="false">PANTS & JEANS</button>
+        <button class="filter" data-filter="jackets" aria-pressed="false">JACKETS</button>
+        <button class="filter" data-filter="bags" aria-pressed="false">BAGS</button>
+        <button class="filter" data-filter="caps" aria-pressed="false">CAPS</button>
+        <button class="filter" data-filter="hoodies" aria-pressed="false">HOODIES</button>
+        <button class="filter" data-filter="accessories" aria-pressed="false">ACCESSORIES</button>
+      </div>
+
+      <div class="catalog-meta">
+        <span>RAWFORM® / SEASON 01</span>
+        <span id="product-count">24 PIECES</span>
+      </div>
+
+      <div class="products" id="products-grid"></div>
+
+      <p class="collection-bottom">END OF COLLECTION — MORE FORMS COMING SOON.</p>
+    </section>
+
+    <section class="manifesto" id="story">
+      <div class="manifesto-top">
+        <p class="eyebrow">02 — THE RAWFORM MANIFESTO</p>
+        <span>INDEPENDENT BY DESIGN.</span>
+      </div>
+      <h2>DON'T DRESS<br>TO <span>IMPRESS.</span><br>DRESS TO EXIST.</h2>
+      <div class="manifesto-bottom">
+        <p>
+          RAWFORM is an independent streetwear concept built around
+          personal expression, relaxed silhouettes and the freedom to
+          make your own rules.
+        </p>
+        <span>RAWFORM® / INDIA / 2026</span>
+      </div>
+    </section>
+
+    <section class="newsletter section-pad">
+      <div>
+        <p class="eyebrow">03 — STAY IN THE LOOP</p>
+        <h2>FIRST TO KNOW.<br><span>NEVER ORDINARY.</span></h2>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <label for="email">YOUR EMAIL ADDRESS</label>
+        <div class="email-row">
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <button type="submit" aria-label="Subscribe">↗</button>
+        </div>
+        <p id="form-message">New drops, fresh forms, no unnecessary noise.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home">RAWFORM<span>®</span></a>
+    <p>WEAR YOUR FORM. / INDIA</p>
+    <div class="footer-links">
+      <a href="#collection">SHOP</a>
+      <a href="#story">ABOUT</a>
+      <a href="mailto:hello@rawform.example">CONTACT</a>
+    </div>
+    <span class="copyright">© 2026 RAWFORM® — ALL RIGHTS RESERVED.</span>
+  </footer>
+
+  <!-- Product details dialog -->
+  <dialog id="product-dialog" class="product-dialog">
+    <button class="dialog-close" id="close-dialog" aria-label="Close product details">✕</button>
+    <div class="dialog-layout">
+      <div class="dialog-image-wrap">
+        <img id="dialog-image" src="" alt="">
+      </div>
+      <div class="dialog-details">
+        <p class="eyebrow" id="dialog-category">RAWFORM® / PRODUCT</p>
+        <h2 id="dialog-name">PRODUCT NAME</h2>
+        <p class="dialog-price" id="dialog-price">₹0</p>
+        <p class="dialog-description">
+          Everyday streetwear with a considered fit and distinctive details.
+        </p>
+
+        <div class="option-heading">
+          <label for="product-color">COLOUR</label>
+          <span id="selected-color-label">BLACK</span>
+        </div>
+        <select id="product-color" class="color-select">
+          <option>Black</option>
+          <option>White</option>
+          <option>Off-white</option>
+          <option>Grey</option>
+          <option>Stone</option>
+          <option>Olive</option>
+          <option>Bone</option>
+          <option>Charcoal</option>
+          <option>Blue denim</option>
+          <option>Washed blue</option>
+        </select>
+
+        <div class="option-heading size-heading">
+          <span>SELECT SIZE</span>
+          <span>SIZE GUIDE: XS—XXL</span>
+        </div>
+        <div class="sizes" id="size-options">
+          <button type="button" data-size="S" aria-pressed="false">S</button>
+          <button type="button" data-size="M" class="selected" aria-pressed="true">M</button>
+          <button type="button" data-size="L" aria-pressed="false">L</button>
+          <button type="button" data-size="XL" aria-pressed="false">XL</button>
+          <button type="button" data-size="XXL" aria-pressed="false">XXL</button>
+        </div>
+
+        <button id="add-to-bag" class="primary-button add-button">
+          ADD TO BAG <span>↗</span>
+        </button>
+        <p class="product-note">DEMO STORE / NO PAYMENT IS TAKEN.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Shopping bag -->
+  <div class="bag-overlay" id="bag-overlay" hidden></div>
+  <aside class="bag-drawer" id="bag-drawer" aria-hidden="true"
+    aria-label="Shopping bag">
+    <div class="drawer-heading">
+      <div>
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h2>THE BAG <span id="drawer-count">(0)</span></h2>
+      </div>
+      <button id="close-bag" aria-label="Close shopping bag">✕</button>
+    </div>
+
+    <div id="bag-empty" class="bag-empty">
+      <span>YOUR BAG IS EMPTY.</span>
+      <p>Something good belongs here.</p>
+      <button id="continue-shopping" class="primary-button">
+        DISCOVER PRODUCTS ↗
+      </button>
+    </div>
+
+    <div id="bag-items" class="bag-items"></div>
+
+    <div class="bag-summary">
+      <div class="subtotal-row">
+        <span>SUBTOTAL</span>
+        <strong id="bag-subtotal">₹0</strong>
+      </div>
+      <p>Shipping and any applicable taxes are calculated separately.</p>
+      <button id="checkout-button" class="primary-button checkout-button" disabled>
+        CHECKOUT <span>↗</span>
+      </button>
+      <p class="product-note">DEMO ONLY — CHECKOUT IS NOT CONNECTED.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
